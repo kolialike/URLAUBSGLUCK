@@ -1,0 +1,44 @@
+.header-text
+	max-width: 500px
+	margin: auto
+	padding: 0 20px
+
+.enter-registration
+	display: inline-block
+	position: absolute
+	right: 11px
+	top: 46px
+	font-weight: bold
+	+breakpoint($break-1023)
+		right: 5.33%
+	+breakpoint($break-767)
+		top: 40px
+		left: 20px
+
+
+.sing-up
+	border: 2px solid #fff
+	+border-radius(20px)
+	padding: 8px 16px
+	margin-left: 15px
+	+transition(0.5s)
+	&:hover
+		border: 2px solid #000
+
+
+.find-holiday-partner
+	display: inline-block
+	background-color: #ff4e50
+	+border-radius(20px)
+	padding: 12px 25px
+	margin: 18px 0
+	+transition(0.5s)
+	+breakpoint($break-1023)
+		margin: 40px 0
+	+breakpoint($break-767)
+		margin: 40px 8.9%
+
+
+#header .find-holiday-partner:hover
+	background: #850405
+	color: #fff

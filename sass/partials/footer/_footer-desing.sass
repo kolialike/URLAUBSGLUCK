@@ -1,0 +1,14 @@
+.footer-desing
+    position: absolute
+    right: 10px
+    top: 38px
+    +transition(0.5s)
+    &:hover
+        opacity: 0.5   
+    +breakpoint($break-1023)
+        right: 5.333%
+    +breakpoint($break-767)
+        position: static
+        display: block
+        text-align: center
+        margin: 30px 0px 0px 0px

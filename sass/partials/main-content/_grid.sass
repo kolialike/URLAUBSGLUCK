@@ -1,0 +1,83 @@
+.grid
+    margin-left: -2.08333%
+    overflow: hidden
+    margin-bottom: 95px
+    position: relative
+    img
+        display: block
+        height: 310px
+        position: absolute
+        left: 0
+        top: 0
+        width: auto
+        border-radius: 5px
+        z-index: 0
+        +breakpoint($break-767)
+            width: 100%
+            top: -95px
+    span
+        font-weight: bold
+        font-size: 22px
+        color: #fff
+        margin: 0px
+        display: inline-block
+        vertical-align: middle
+        width: 73.3333%
+        +breakpoint($break-1023)
+            font-size: 21.99px
+            width: 94%
+        
+.grid-1x1
+    float: left
+    margin: 2.08333% 0px 0px 2.08333%
+    width: 31.25%
+    text-align: center
+    +box-sizing(border-box)
+    height: 310px
+    position: relative
+    +transition(0.5s)
+    &:hover
+        opacity: 0.5
+    overflow: hidden
+    +border-radius(5px)
+    +breakpoint($break-767)
+        width: 300px
+        margin-bottom: 20px
+        height: 120px
+    &:hover
+        opacity: 0.5
+
+.grid-1x2
+    float: left
+    margin: 2.08333% 0px 0px 2.08333%
+    width: 64.583%
+    text-align: center
+    +box-sizing(border-box)
+    height: 310px
+    position: relative
+    overflow: hidden
+    +transition(0.5s)
+    &:hover
+        opacity: 0.5
+    +border-radius(5px)
+    +breakpoint($break-767)
+        width: 300px
+        margin-bottom: 20px
+        height: 120px
+
+.grid-text
+    position: absolute
+    right: 0
+    bottom: 0
+    z-index: 5
+    width: 100%
+    vertical-align: middle
+    height: 100%
+    padding: 0 3px
+    +box-sizing(border-box)
+    &:before
+        content: ""
+        width: 0
+        height: 100%
+        vertical-align: middle
+        display: inline-block

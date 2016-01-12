@@ -1,0 +1,87 @@
+@import "main-content/list"
+
+.main-content h3
+    font-weight: bold
+    color: #000
+    font-size: 22px
+    text-align: center
+    margin-top: 86px
+    margin-bottom: 15px
+    +breakpoint($break-1023)
+        font-size: 21.99px
+    +breakpoint($break-767)
+        font-size: 20.99px
+
+
+.partner
+    margin-top: 32px
+    margin-left:  -2.08333%
+    overflow: hidden
+    text-align: center
+
+
+
+.partner-item
+    position: relative
+    display: inline-block
+    vertical-align: top
+    width: 22.57%
+    margin-left: 2.08333%
+    +box-sizing(border-box)
+    padding: 0px 1px
+    h5
+        font-weight: bold
+        margin: 15px 0px 0px 0px
+        &>a
+            font-size: 14px
+            color: #000
+            +transition(0.5s)
+            &:hover
+                color: #c11113
+    img
+        position: relative
+        +transition(0.5s)
+    a>img
+        &:hover
+            opacity: 0.5
+    p
+        font-family: $RL
+        color: #989898
+        font-size: 14px
+        margin-top: 12px
+    .icon
+        position: absolute
+        top: 85px
+        right: 45px
+    +breakpoint($break-1023)
+        width: 30%
+        margin: 0px 2.5974%
+    +breakpoint($break-767)
+        width: 75%
+        margin: 10px 2.5974%
+
+.icon1
+    +icon("partner1-icon")
+.icon2
+    +icon("partner2-icon")
+.icon3
+    +icon("partner3-icon")
+.icon4
+    +icon("partner4-icon")
+
+
+.see-other-partners
+    display: block
+    margin: 18px auto 95px
+    text-align: center
+    color: #ff4e50
+    border: 2px solid #ff4e50
+    border-radius: 50px
+    font-size: 14px
+    padding: 9px 0px
+    +transition(0.5s)
+    max-width: 188px
+    font-weight: bold
+    &:hover
+        color: #b30608
+        border: 2px solid #b30608

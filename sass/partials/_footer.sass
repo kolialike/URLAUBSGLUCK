@@ -1,0 +1,56 @@
+@import "footer/footer-desing"
+
+#footer
+    border-top: 5px solid #ff4e50
+    margin-bottom: 50px
+    +breakpoint($break-767)
+        margin-bottom: 20px
+
+.footer-logo
+    display: inline-block
+    vertical-align: top
+    margin: 35px 10% 0px 0px
+    +transition(0.5s)
+    +breakpoint($break-1023)
+        margin: 30px 6.666% 0px 5.333%
+    +breakpoint($break-767)
+        margin: 30px auto 15px
+        display: block
+        text-align: center
+
+.footer-logo:hover
+    opacity: 0.5  
+
+.footer-item
+    display: inline-block
+    width: 100px
+    vertical-align: top
+    margin: 36px 5.9574% 0px 0px
+    h6
+        font-weight: bold
+        margin-top: 0px
+        margin-bottom: 10px
+        font-size: 14px
+    a
+        +transition(0.5s)
+        font-family: $RL
+        color: #989898
+        font-size: 14px
+        line-height: 24px
+        &:hover
+            color: #000
+    +breakpoint($break-767)
+        text-align: center
+        width: 100%
+        margin: 8px auto 0px
+    li
+        +breakpoint($break-767)
+            text-align: center
+            display: inline-block
+        a
+            +breakpoint($break-767)
+                text-align: center
+                padding: 0px 15px            
+
+
+

@@ -1,0 +1,59 @@
+.front-slider .slides
+    li
+        position: relative
+        height: 400px
+        overflow: hidden
+        +breakpoint($break-767)
+            height: 240px
+    img
+        display: block
+        +breakpoint($break-767)
+            height: auto
+            width: 100%
+            margin-top: -80px
+
+.front-slider .slider-text
+    +box-sizing(border-box)
+    display: table-cell
+    position: absolute
+    bottom: 0px
+    right: 0px
+    vertical-align: bottom
+    padding: 20px 20px 0px 20px
+    z-index: 10
+
+
+.front-slider .text-step-style
+    margin: 9px 0px
+    padding: 4px 12px
+    background: #ff4e50
+    +border-radius(15px)
+    display: inline-block
+    text-transform: uppercase
+    font-size: 10px
+    letter-spacing: 2px
+    color: #fff
+    font-family: $mon-t
+
+.front-slider
+    overflow: hidden
+    margin: 34px 0px 95px  -2.08333%
+    h4
+        font-weight: bold
+        color: #fff
+        font-size: 24px
+        margin: 5px 0px
+    p
+        color: #b3b2b1
+        font-size: 14px
+        font-family: $RL
+        margin-top: 9px
+    .flexslider
+        +breakpoint($break-1023)
+            width: 30.6493%
+            margin-left: 2.597%
+        +breakpoint($break-767)
+            width: 300px
+            height: 240px
+            margin-bottom: 20px
+    

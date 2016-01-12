@@ -1,0 +1,60 @@
+@import "header/header-text"
+
+#header
+	background: image-url("header-bg.jpg") no-repeat top center
+	min-height: 705px
+	color: #fff
+	text-align: center
+	h1
+		font-size: 52px
+		text-transform: uppercase
+		font-weight: bold
+		max-width: 500px
+		margin: 0px auto
+		+breakpoint($break-1023)
+			padding: 0px
+			font-size: 51.97px
+		+breakpoint($break-767)
+			padding: 0px 0px
+			font-size: 30px
+
+	p
+		color: #fff
+		font-size: 24px
+		font-family: $RL
+		margin-top: 21px
+		+breakpoint($break-1023)
+			font-size: 23.99px
+		+breakpoint($break-767)
+			font-size: 18px
+			padding: 0px 35px
+	a
+		color: #fff
+		font-size: 14px
+		+transition(0.5s)
+		&:hover
+			color: #000
+		+breakpoint($break-1023)
+			font-size: 13.99px
+	&>.wrapper
+		padding: 215px 0px 0px
+
+
+.logo
+	display: inline-block
+	position: absolute
+	top: 46px
+	left: 10px
+	+transition(0.5s)
+	&:hover
+		opacity: 0.5
+	+breakpoint($break-1023)
+		margin: 0px 0px 0px 5.33%
+	+breakpoint($break-767)
+		margin: 0px 0px 0px 5.33%
+		top: 140px
+		left: 54px
+
+
+
+
